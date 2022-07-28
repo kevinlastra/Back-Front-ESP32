@@ -1,6 +1,6 @@
 # Introduction 
 
-The goal of this project was to make a Raspberry Pi3 communicate with an ESP32, via the MQTT protocol using the Mosquitto.\ broker.
+The goal of this project was to make a Raspberry Pi3 communicate with an ESP32, via the MQTT protocol using the Mosquitto broker.
 The Raspberry will host a broker, an Apache HTTP server and a database. In detail we have set the following objectives:
 1. Develop a web page, which will be hosted on the Apache server, which will allow to drive the esp32,
 2. Create a database to store information about the exchanged data,
