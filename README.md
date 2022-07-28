@@ -1,6 +1,6 @@
-Made by
-Louis Geoffroy Pitailler
-Kevin Lastra
+### Made by 
+[Louis Geoffroy Pitailler](https://github.com/lovisXII) \
+[Kevin Lastra](https://github.com/kevinlastra)
 
 # Introduction 
 
