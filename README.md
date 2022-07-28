@@ -1,3 +1,7 @@
+Made by
+Louis Geoffroy Pitailler
+Kevin Lastra
+
 # Introduction 
 
 The goal of this project was to make a Raspberry Pi3 communicate with an ESP32, via the MQTT protocol using the Mosquitto broker.
