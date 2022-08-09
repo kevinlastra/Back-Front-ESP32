@@ -4,9 +4,10 @@
 
 # Introduction 
 
-The goal of this project was to make a Raspberry Pi3 communicate with an ESP32, via the MQTT protocol using the Mosquitto broker.
-The Raspberry will host a broker, an Apache HTTP server and a database. In detail we have set the following objectives:
-1. Develop a web page, which will be hosted on the Apache server, which will allow to drive the esp32,
+The purpose of this project was to allow a Raspberry Pi3 to communicate with an ESP32, via MQTT protocol using a Mosquitto broker.
+The Raspberry host a broker, an Apache HTTP server and a database. 
+To be more precise, we set the following objectives:
+1. Develop a web page, which will be hosted by the Apache server, and which will control the esp32,
 2. Create a database to store information about the exchanged data,
 3. Use the different modules connected to the esp32, which in our case are:
     - A LED
@@ -20,7 +21,7 @@ The Raspberry will host a broker, an Apache HTTP server and a database. In detai
 
 ![title](Schema_ioc.png)
 ## WEB
-We have developed an HTML WEB page using php to manage the server side. We also added a part written in javascript to manage the client side.
+We developed an HTML WEB page using php to manage the server side. We also added a part written in javascript to manage the client side.
 This web page is written in the index.php file (index.php) at the root of the folder ("/var/www/SESIBG.com/public_html") that we have designated in the apache2 server configuration.
 
 In the index.php file we defined 3 checkboxes and a text zone with a button, allowing to control the led, to read the value of the button, the photo-diode and to write on the LCD screen.
@@ -35,10 +36,9 @@ In the index.php file we defined 3 checkboxes and a text zone with a button, all
   </div>
 </div>
 ```
-For each checkbox and each button we added an attribute "onchange" or "onclick" to call the functions defined in javascript. These functions will allow us to send data to the server via POST requests, without having to refresh the web page. Indeed, if we don't do that, when we use a simple form in HTLM and we click on the submit button, the page will be refreshed and the data received will be lost.
+For each checkbox and each button we added an attribute "onchange" or "onclick" to call the functions defined in javascript. These functions allowed us to send data to the server via POST requests, without having to refresh the web page. 
 
-
-To send data to the serverUr we use the fetch function with the POST method.
+To send data to the server we used the fetch function with the POST method.
 
 > fetch(url, [options])
 >
